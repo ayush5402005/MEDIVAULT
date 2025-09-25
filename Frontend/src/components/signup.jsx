@@ -10,7 +10,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/auth/signup", formData);
+      await axios.post("https://medvault-backend-mm9z.onrender.com/auth/signup", formData);
       navigate("/login");
     } catch (error) {
       console.error("Signup failed:", error.response?.data?.message || error.message);
@@ -55,3 +55,4 @@ const Signup = () => {
 };
 
 export default Signup;
+
