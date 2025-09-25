@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/auth";
+const API_URL = "https://medvault-backend-mm9z.onrender.com/auth";
 
 export const signup = async (userData) => {
   try {
@@ -21,3 +21,4 @@ export const login = async (credentials) => {
     throw error;
   }
 };
+
