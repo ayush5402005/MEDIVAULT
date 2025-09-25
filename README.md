@@ -53,6 +53,5 @@ Below are key UI screenshots from the MedVault application:
 ## Future Enhancements
 
 - Integration of AI-based report analysis and insights.
-```
 
 
