@@ -29,7 +29,7 @@ export default function UploadPage() {
       setUploadUrl(uploadedUrl)
 
       // Now send this info to your backend to save in MongoDB
-      await axios.post("http://localhost:5000/api/reports/addReport", {
+      await axios.post("https://medvault-backend-mm9z.onrender.com/api/reports/addReport", {
         userId: "107",            // Replace with logged-in user's ID
         fileUrl: uploadedUrl,
         fileName: filename,

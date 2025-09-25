@@ -10,7 +10,7 @@ function SharedReport() {
   useEffect(() => {
     const fetchReport = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/reports/shared/${token}`);
+        const res = await axios.get(`https://medvault-backend-mm9z.onrender.com/api/reports/shared/${token}`);
         setReport(res.data);
       } catch (err) {
         setError(err.response?.data?.message || "Error loading report");

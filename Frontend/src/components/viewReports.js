@@ -13,19 +13,19 @@ export default function ViewReportsPage() {
   const [qrError, setQrError] = useState(null)
 
   const fetchReports = async () => {
-    const res = await axios.get(`http://localhost:5000/api/reports/getReports/${userId}`)
+    const res = await axios.get(`https://medvault-backend-mm9z.onrender.com/api/reports/getReports/${userId}`)
     setReports(res.data)
   }
 
   const deleteReport = async (fileName) => {
-    await axios.delete(`http://localhost:5000/api/reports/deleteReport/${userId}/${fileName}`)
+    await axios.delete(`https://medvault-backend-mm9z.onrender.com/api/reports/deleteReport/${userId}/${fileName}`)
     setSelectedReport(null)
     setQrData(null)
     fetchReports()
   }
 
   const updateDescription = async () => {
-    await axios.put(`http://localhost:5000/api/reports/updateDescription/${userId}/${selectedReport.fileName}`, {
+    await axios.put(`https://medvault-backend-mm9z.onrender.com/api/reports/updateDescription/${userId}/${selectedReport.fileName}`, {
       newDescription
     })
     setSelectedReport(null)
@@ -43,7 +43,7 @@ export default function ViewReportsPage() {
     try {
       setLoadingQR(true);
 const res = await axios.post(
-  `http://localhost:5000/api/reports/generate-share-link/${selectedReport.fileName}`,
+  `http://https://medvault-backend-mm9z.onrender.com/api/reports/generate-share-link/${selectedReport.fileName}`,
   { userId }   // <-- send userId in body
 );
   setQrData(res.data);
