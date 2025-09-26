@@ -43,7 +43,11 @@ export default function ViewReportsPage() {
     try {
       setLoadingQR(true);
 const res = await axios.post(
+<<<<<<< HEAD
   `http://https://medvault-backend-mm9z.onrender.com/api/reports/generate-share-link/${selectedReport.fileName}`,
+=======
+  `https://medvault-backend-mm9z.onrender.com/api/reports/generate-share-link/${selectedReport.fileName}`,
+>>>>>>> d5f75564433c56c8466c578196c36e90a791ea37
   { userId }   // <-- send userId in body
 );
   setQrData(res.data);
@@ -134,3 +138,4 @@ const res = await axios.post(
     </div>
   )
 }
+

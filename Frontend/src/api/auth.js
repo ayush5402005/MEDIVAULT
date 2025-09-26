@@ -21,3 +21,4 @@ export const login = async (credentials) => {
     throw error;
   }
 };
+
