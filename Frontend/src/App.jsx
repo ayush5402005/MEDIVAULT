@@ -13,7 +13,7 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import SharedReport from './pages/SharedReport';
 import Login from "./components/login";     // Create this
-import Signup from "./components/Signup";   // Create this
+import Signup from "./components/signup";   // Create this
 import Home from "./components/home";
 import Medupload from "./components/medupload";
 import ViewReports from "./components/viewReports";
