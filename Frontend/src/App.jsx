@@ -1,4 +1,4 @@
-import Login from './components/Login';
+;
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/navigation";
@@ -12,7 +12,7 @@ import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import SharedReport from './pages/SharedReport';
-import Login from "./components/Login";     // Create this
+import Login from "./components/login";     // Create this
 import Signup from "./components/Signup";   // Create this
 import Home from "./components/home";
 import Medupload from "./components/medupload";
